@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}HoiChoi!</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-teal-600">
+        <nav class="flex items-center justify-between px-4 py-6 bg-teal-800">
+            <dev>
+                <a href="/" class="text-xt text-white">HoiChoi!</a>
+            </dev>
+
+            <dev class="flex items-center space-x-4">
+                <a href="/login/" class="text-white hover:text-gray-200">Log in</a>
+
+                <a href="/signup/" class="px-5 py-3 rounded-xl text-white bg-teal-600 hover:bg-teal-700">Sign up</a>
+            </dev>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+</body>
+</html>
